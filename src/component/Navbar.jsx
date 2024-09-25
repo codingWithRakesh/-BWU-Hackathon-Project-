@@ -2,9 +2,14 @@ import React from 'react'
 import { FaLaptopCode } from 'react-icons/fa'
 import { MdDarkMode } from 'react-icons/md'
 import { Link, NavLink } from 'react-router-dom'
+import { useTopLoader } from '../contexts/topLoaderContext'
+import TopLoadingBar from './TopLoadingBar'
 
 const Navbar = () => {
+    const [[progress, setProgress]] = useTopLoader()
     return (
+        <>
+        <TopLoadingBar progress={progress} setProgress={setProgress} />
         <nav className='navbar navbarshadow'>
             <div className="logo">
                 <span>
@@ -29,6 +34,7 @@ const Navbar = () => {
 
 
         </nav>
+        </>
     )
 }
 

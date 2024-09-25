@@ -54,7 +54,7 @@
 .navClick{
   /* border: 1px solid black; */
   list-style-type: none;
-  padding: .3rem .5rem;
+  padding: .5rem;
   border-radius: 5px;
   text-transform: uppercase;
   cursor: pointer;
@@ -94,10 +94,10 @@
   width: 35%;
   /* border: 1px solid black; */
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: all .3s;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,9 +141,9 @@
 
 
 /* webScreenshot */
-.webScreenshot{
-  border: 1px solid black;
-}
+/* .webScreenshot{
+  /* border: 1px solid black; 
+} */
 
 .webScreenshotBox{
   width: 40%;
@@ -154,6 +154,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.webScreenshotBox p{
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.webScreenshotBox input{
+  min-height: 3rem;
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.3rem;
 }
 
 .button-6 {
@@ -202,3 +217,4 @@
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
 }
+

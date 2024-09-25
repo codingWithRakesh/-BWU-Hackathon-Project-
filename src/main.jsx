@@ -8,6 +8,7 @@ import About from './component/About.jsx'
 import WebScreenshot from './component/webScreenshot.jsx'
 import RandomUserData from './component/randomUserData.jsx'
 import PdfToQr from './component/pdfToQr.jsx'
+import TopLoderProvider from './contexts/topLoaderContext.jsx'
 
 const router = createBrowserRouter([
   {
@@ -39,7 +40,9 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+  <TopLoderProvider>
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>
+  </TopLoderProvider>
 )
