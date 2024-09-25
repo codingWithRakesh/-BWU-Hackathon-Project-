@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
-.container{
+.container {
   min-height: 100vh;
   width: 100%;
   position: relative;
@@ -21,12 +21,50 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #fff;
+  background: var(--hover);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #000;
+  background: var(--backgroundColor);
   border-radius: 10px;
   border: 2px solid transparent;
   background-clip: content-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--backgroundColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--hover);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+[data-theme="light"] {
+  --headerColor: #0F0F0F;
+  --paragraphColor: #606060;
+  --backgroundColor: #fff;
+  --componentBG: #fff;
+  --componentBGhover: #EFEFEF;
+  --smallColor: #065FD4;
+  --hover: #EFEFEF;
+  --blur: #909090bd;
+
+}
+
+[data-theme="dark"] {
+  --headerColor: #F1F1F1;
+  --paragraphColor: #AAAAAA;
+  --backgroundColor: #0f0f0f;
+  --componentBG: #28262b;
+  --componentBGhover: #0f0f0f;
+  --smallColor: #065FD4;
+  --hover: #28262b;
+  --blur: #28262bab;
 }
