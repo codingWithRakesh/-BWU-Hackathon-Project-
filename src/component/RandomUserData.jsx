@@ -48,38 +48,12 @@ const RandomUserData = () => {
 
   return (
     <div className='hero webScreenshot'>
-      {/* <div className="radomdata">
-        <p className='headrandom'>
-          Enter how many random user data you need
-        </p>
-        <form
-          onSubmit={fetchAndDownloadCSV}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column"
-          }}
-        >
-          <input
-            className='randominput'
-            type="text"
-            placeholder="Enter number of users"
-            value={userCount}
-            onChange={(e) => setUserCount(e.target.value)}
-            disabled={loading} 
-          />
-          <button type="submit" className='btn btn-success my-3' disabled={loading}>
-            {loading ? 'Generating...' : 'Generate & Download CSV'}
-          </button>
-        </form>
-      </div> */}
       <div className="webScreenshotBox">
         <p>
         Enter how many random user data you need
         </p>
         <input value={userCount} placeholder='Enter number of users' onChange={(e) => setUserCount(e.target.value)} type="text" />
-        <button className="button-6" role="button" onClick={fetchAndDownloadCSV}>{loading ? <img src={loader}/> : "Click"}</button>
+        <button className="button-6" role="button" onClick={fetchAndDownloadCSV}>{loading ? <img src={loader}/> : "Generate & Download CSV"}</button>
       </div>
     </div>
   );

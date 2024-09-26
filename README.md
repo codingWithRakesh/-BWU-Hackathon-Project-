@@ -1,4 +1,4 @@
-# Random User Data Generator and PDF with QR Code Generator
+# Web Screenshot App, Random User Data Generator and PDF with QR Code Generator
 
 ## Project Description
 
@@ -37,7 +37,60 @@ Both applications are built using React.js and use third-party APIs to fetch and
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/your-repository-name.git
+   cd your-repository-name
+   npm install
+   npm start dev
+## Usage
 
+### Web Screenshot App
+1. Open the app in your browser.
+2. Click the Web Screenshot button.
+3. Enter URL of the website you want to take screenshot.
+4. Click the "Take Screenshot" button to fetch the data and download the CSV.
+
+### Random User Data Generator
+1. Open the app in your browser.
+2. Click the Random User Data button.
+3. Enter the number of users you want to generate.
+4. Click the "Generate & Download CSV" button to fetch the data and download the CSV.
+
+### PDF with QR Code Generator
+1. Open the app in your browser.
+2. Click the PDF TO QR button.
+3. Enter the text you want to generate a QR code for.
+4. Click the "Generate QR Code" button to download the PDF.
+
+## Screenshots
+
+
+### Home page
+![Home page ](./src/assets/img/home.png)
+
+### Web Screenshot 
+![Web Screenshot ](./src/assets/img/takess.png)
+
+### Random User Data Generator
+![Random User Data Generator](./src/assets/img/userdata.png)
+
+### PDF with QR Code Generator
+![PDF with QR Code Generator](./src/assets/img/qrcode.png)
+
+## API References
+
+- [Web Screenshot API](https://app.abstractapi.com/dashboard)
+  - This API help to take screenshot any website in the project.
+
+- [Random User API](https://randomuser.me/)
+  - This API provides the random user data used in the project.
+
+
+## Acknowledgements
+
+- [React.js](https://reactjs.org/)
+- [jsPDF](https://github.com/parallax/jsPDF)
+- [qrcode.react](https://www.npmjs.com/package/qrcode.react)
+- [Web Screenshot API](https://app.abstractapi.com/dashboard)
+- [Random User API](https://randomuser.me/)
 
 
 
