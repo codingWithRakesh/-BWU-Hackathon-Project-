@@ -35,7 +35,7 @@ const WebScreenshot = () => {
         <p>
           Enter Your Website URL
         </p>
-        <input value={inputData} onChange={(e) => setInputData(e.target.value)} type="text" />
+        <input value={inputData} placeholder='Enter URL' onChange={(e) => setInputData(e.target.value)} type="text" />
         <button className="button-6" role="button" onClick={getImg}>{loading ? <img src={loader}/> : "Click"}</button>
       </div>
       {close && <Modal setClose={setClose} close={close} imgUrl={imgUrl}/>}

@@ -13,7 +13,7 @@
 
     .bottombar{
         width: 100%;
-        background-color: #fff;
+        background-color: var(--componentBG);
         min-height: 1rem;
         display: flex;
         flex-direction: column;
@@ -33,13 +33,15 @@
         padding: 1rem;
         border-radius: 5px;
         text-transform: uppercase;
-        border: 1px solid black;
+        border: 2px solid var(--componentBGhover);
+        color: var(--headerColor);
     }
 
     .crose{
         position: absolute;
         right: 1rem;
         bottom: 1rem;
+        color: var(--headerColor);
     }
 
     .menu{
@@ -50,12 +52,28 @@
         width: 3rem;
         font-size: 1.4rem;
         border-radius: 50%;
-        border: 1px solid black;
+        border: 1px solid var(--componentBGhover);
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #fff;
+        background-color: var(--componentBG);
+        color: var(--headerColor);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
+
+    .writeAbout{
+      width: 100%;
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    [aria-current="page"] {
+        background-color: transparent;
+        color: var(--headerColor);
+        border: 2px solid var(--smallColor);
 }
 
 @media only screen and (max-width: 500px) {
@@ -85,5 +103,17 @@
 
     .logo span{
         font-size: 2.5rem;
+    }
+
+    .modalQr{
+        width: 95%;
+    }
+
+    .boxAbout{
+      width: 100%;
+    }
+
+    .aboutBtn{
+      margin-bottom: 1rem;
     }
 }

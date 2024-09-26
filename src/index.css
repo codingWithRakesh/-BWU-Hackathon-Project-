@@ -55,7 +55,7 @@ body::-webkit-scrollbar-thumb {
   --smallColor: #065FD4;
   --hover: #EFEFEF;
   --blur: #909090bd;
-
+  --white: #fff;
 }
 
 [data-theme="dark"] {
@@ -67,4 +67,5 @@ body::-webkit-scrollbar-thumb {
   --smallColor: #065FD4;
   --hover: #28262b;
   --blur: #28262bab;
+  --white: #fff;
 }
