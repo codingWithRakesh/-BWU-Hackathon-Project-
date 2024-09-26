@@ -4,27 +4,35 @@ import jsPDF from "jspdf";
 import React, { useRef } from 'react'
 import { RxCross2 } from 'react-icons/rx'
 
-const ModalQr = ({ info,setCheckQR }) => {
+const ModalQr = ({ info, setCheckQR }) => {
     const qrRef = useRef();
-
+  
     const downloadQRCodeAsPDF = () => {
-    const qrElement = qrRef.current;
-    if (!qrElement) return;
-
-    html2canvas(qrElement, { scale: 3 }).then((canvas) => {
+      const qrElement = qrRef.current;
+      if (!qrElement) return;
+  
+      html2canvas(qrElement, { scale: 3 }).then((canvas) => {
         const imgData = canvas.toDataURL("image/png");
-
+  
         const pdf = new jsPDF();
-        const imgWidth = 150;
-        const imgHeight = imgWidth;
-
-        pdf.addImage(imgData, "PNG", 15, 40, imgWidth, imgHeight);
+    
+        const pageWidth = pdf.internal.pageSize.getWidth();
+        const pageHeight = pdf.internal.pageSize.getHeight();
+        
+        const imgWidth = pageWidth - 30;
+        const imgHeight = (canvas.height / canvas.width) * imgWidth; 
+  
+        const centerX = (pageWidth - imgWidth) / 2; 
+        const centerY = (pageHeight - imgHeight) / 2; 
+  
+        pdf.addImage(imgData, "PNG", centerX, 40, imgWidth, imgHeight);
         pdf.text(15, imgHeight + 60, info);
         pdf.save("qrcode_with_info.pdf");
-    }).catch((error) => {
+      }).catch((error) => {
         console.error("Error generating QR code PDF:", error);
-    });
-};
+      });
+    };
+  
 
     
     return (

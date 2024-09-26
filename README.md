@@ -58,7 +58,7 @@ Both applications are built using React.js and use third-party APIs to fetch and
 1. Open the app in your browser.
 2. Click the PDF TO QR button.
 3. Enter the text you want to generate a QR code for.
-4. Click the "Generate QR Code" button to download the PDF.
+4. Click the "Generate QR" button to download the PDF.
 
 ## Screenshots
 
