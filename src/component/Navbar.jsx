@@ -26,7 +26,7 @@ const Navbar = () => {
                     <NavLink to="/" className='navClick hideMobile'>HOME</NavLink>
                     <NavLink to="/webScreenshot" className='navClick hideMobile'>web screenshot</NavLink>
                     <NavLink to="/randomUserData" className='navClick hideMobile'>random user data</NavLink>
-                    <NavLink to="/pdfToQr" className='navClick hideMobile'>PDF TO QR</NavLink>
+                    <NavLink to="/pdfToQr" className='navClick hideMobile'>generate qr</NavLink>
                     <NavLink to="/about" className='navClick hideMobile'>ABOUT</NavLink>
                     <div className="navClick modefor" onClick={()=>setModeCheck((e)=>!e)}>
                         {modeCheck? <MdDarkMode /> : <MdLightMode />}

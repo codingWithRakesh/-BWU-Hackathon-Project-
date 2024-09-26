@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BsFiletypePdf } from 'react-icons/bs'
+import { BsFiletypePdf, BsQrCode } from 'react-icons/bs'
 import { FaClipboardUser } from 'react-icons/fa6'
 import { RiScreenshotFill } from 'react-icons/ri'
 import { Link } from 'react-router-dom'
@@ -20,7 +20,7 @@ const Hero = () => {
                 <span>
                     <RiScreenshotFill />
                 </span>
-                <button className="button-33" role="button">web screenshot</button>
+                <button className="button-33" role="button">Web Screenshot</button>
             </Link>
             <Link to="/randomUserData" className="clickCom">
                 <span>
@@ -30,9 +30,10 @@ const Hero = () => {
             </Link>
             <Link to="/pdfToQr" className="clickCom">
                 <span>
-                <BsFiletypePdf />
+                <BsQrCode />
                 </span>
-                <button className="button-33" role="button">PDF TO QR</button>
+                <button className="button-33" role="button">
+                Generate QR</button>
             </Link>
         </div>
     )

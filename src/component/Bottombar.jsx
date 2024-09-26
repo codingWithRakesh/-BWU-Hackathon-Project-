@@ -10,7 +10,7 @@ const Bottombar = () => {
             <NavLink onClick={()=>setBottomCheck((p) => !p)} to="/" className='bottomNav'>HOME</NavLink>
             <NavLink onClick={()=>setBottomCheck((p) => !p)} to="/webScreenshot" className='bottomNav'>web screenshot</NavLink>
             <NavLink onClick={()=>setBottomCheck((p) => !p)} to="/randomUserData" className='bottomNav'>random user data</NavLink>
-            <NavLink onClick={()=>setBottomCheck((p) => !p)} to="/pdfToQr" className='bottomNav'>PDF TO QR</NavLink>
+            <NavLink onClick={()=>setBottomCheck((p) => !p)} to="/pdfToQr" className='bottomNav'>generate qr</NavLink>
             <NavLink onClick={()=>setBottomCheck((p) => !p)} to="/about" className='bottomNav'>ABOUT</NavLink>
 
             <div className="crose" onClick={()=>setBottomCheck((p) => !p)}>

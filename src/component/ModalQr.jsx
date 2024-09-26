@@ -32,7 +32,7 @@ const ModalQr = ({ info,setCheckQR }) => {
             <div className="croseIcon" onClick={()=>setCheckQR((e)=>!e)}>
                 <RxCross2 />
             </div>
-            <p>Your QR</p>
+            <p>QR Code : </p>
             <div ref={qrRef} className="qrBoxShow">
             <QRCodeCanvas value={info} size={256} />
             </div>

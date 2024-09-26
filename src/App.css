@@ -282,7 +282,7 @@
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0 1rem;
   color: var(--headerColor);
 }
@@ -450,6 +450,12 @@ input::placeholder{
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: var(--componentBG);
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.boxAbout:hover{
+  scale: 1.05;
 }
 
 .col1About{

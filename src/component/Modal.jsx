@@ -15,7 +15,7 @@ const Modal = ({ imgUrl, setClose }) => {
   return (
     <div className='modalScreenShort'>
       <div className='topTitle'>
-        <p>This is your screenshot</p>
+        {/* <p>This is your screenshot</p> */}
         <div className="crose" onClick={() => setClose((e) => !e)}><RxCross2 /></div>
       </div>
       <div className="imgShow">

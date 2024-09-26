@@ -24,7 +24,7 @@ const PdfToQr = () => {
           QR Code Generator
         </p>
         <textarea value={info} placeholder='Enter information' onChange={(e) => setInfo(e.target.value)} type="text" ></textarea>
-        <button className="button-6" role="button" onClick={()=>setCheckQR((e)=>!e)} >Click</button>
+        <button className="button-6" role="button" onClick={()=>setCheckQR((e)=>!e)} >Generate QR</button>
       </div>
       {checkQR && <ModalQr setCheckQR={setCheckQR} info={info} />}
     </div>
